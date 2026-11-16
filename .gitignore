@@ -11,5 +11,3 @@
 *.fdb_latexmk
 *.synctex.gz
 *.synctex(busy)
-*.pdf
-!imagens/**/*.pdf
