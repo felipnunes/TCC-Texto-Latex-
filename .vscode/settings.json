@@ -1,0 +1,31 @@
+{
+  // Compilação local do TCC com MiKTeX (F:\MiKTeX), sem latexmk/Perl.
+  "latex-workshop.latex.tools": [
+    {
+      "name": "pdflatex",
+      "command": "F:\\MiKTeX\\miktex\\bin\\x64\\pdflatex.exe",
+      "args": ["-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%"]
+    },
+    {
+      "name": "bibtex",
+      "command": "F:\\MiKTeX\\miktex\\bin\\x64\\bibtex.exe",
+      "args": ["%DOCFILE%"]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "pdflatex ➞ bibtex ➞ pdflatex × 2",
+      "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"]
+    },
+    {
+      "name": "pdflatex (rápido, sem bibliografia)",
+      "tools": ["pdflatex"]
+    }
+  ],
+  "latex-workshop.latex.recipe.default": "first",
+  "latex-workshop.latex.rootFile.useSubFile": false,
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.autoClean.run": "never",
+  "files.encoding": "utf8"
+}

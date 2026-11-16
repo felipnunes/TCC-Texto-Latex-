@@ -1,0 +1,15 @@
+# Arquivos gerados na compilação do LaTeX
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.pdf
+!imagens/**/*.pdf
